@@ -11,6 +11,7 @@
 }
 ````
 3. click : `Create secret gist`
+4. Test : `https://gist.githubusercontent.com/pc-aide/2632373556e1af5e374ac468f91edcab/raw/943020c548b53cb3f27bd819840ee72e135b521b/gistfile1.txt`
 
 <img src="https://i.imgur.com/vlRtYwk.png">
 
