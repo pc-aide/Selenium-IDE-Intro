@@ -2,6 +2,20 @@
 
 ---
 
+## https://gist.github.com/
+1. Git description : ``
+2. content :
+````json
+{
+  "code": "123456"
+}
+````
+3. click : `Create secret gist`
+
+<img src="https://i.imgur.com/vlRtYwk.png">
+
+---
+
 ## https://jsonplaceholder.typicode.com/posts/1
 ````json
 {
