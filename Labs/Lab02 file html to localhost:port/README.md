@@ -1,1 +1,1 @@
-# https://github.com/pc-aide/Selenium-IDE-Intro/tree/main/Labs
+# Lab02 file html to localhost:port
