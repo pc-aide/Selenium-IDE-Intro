@@ -8,7 +8,7 @@ npx mocha test_login.spec.js
 ````
 
 ````js
-// func
+// func ext - convert alias to takeScreenshot from export side
 const fs = require('fs');
 
 async function smartSleep(driver, arg) {
