@@ -16,7 +16,10 @@
 ## Browser
 
 ### Edge
-* npm install -g edgedriver
+````powershell
+# InstallDir %Appdata%\npm\node_modules\edgedriver
+npm install -g edgedriver
+````
 
 ---
 
