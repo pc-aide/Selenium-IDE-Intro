@@ -10,3 +10,5 @@ edgedriver --version
 2025-07-08T19:41:19.795Z INFO edgedriver: Finished downloading Edgedriver
 Microsoft Edge WebDriver 138.0.3351.65 (81e3782c3ab423e3e82c7e8495ffe12f403fb50a)
 ````
+
+<img src="https://i.imgur.com/cxgRLdu.png">
