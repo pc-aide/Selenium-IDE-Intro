@@ -48,3 +48,10 @@ describe('Untitled', function() {
   })
 })
 ````
+
+---
+
+## test CLI
+````powershell
+npx mocha test_login.spec.js
+````
