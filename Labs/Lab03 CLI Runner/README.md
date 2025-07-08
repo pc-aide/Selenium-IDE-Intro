@@ -20,5 +20,16 @@
 
 ---
 
+## env
+````powershell
+[Environment]::SetEnvironmentVariable(
+  "PATH",
+  "$env:PATH;$env:APPDATA\npm",
+  [EnvironmentVariableTarget]::User
+)
+````
+
+---
+
 ## Test
 `selenium-side-runner /path/to/your-project.side`
