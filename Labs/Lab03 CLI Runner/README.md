@@ -22,6 +22,17 @@
 
 ## env
 ````powershell
+get-command "selen*" |
+ fl name,source
+
+
+Name   : selenium-side-runner.ps1
+Source : C:\Users\paul\AppData\Roaming\npm\selenium-side-runner.ps1
+
+Name   : selenium-side-runner.cmd
+Source : C:\Users\paul\AppData\Roaming\npm\selenium-side-runner.cmd
+````
+````powershell
 [Environment]::SetEnvironmentVariable(
   "PATH",
   "$env:PATH;$env:APPDATA\npm",
