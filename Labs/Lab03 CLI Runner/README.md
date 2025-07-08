@@ -17,3 +17,8 @@
 
 ### Edge
 * npm install -g edgedriver
+
+---
+
+## Test
+`selenium-side-runner /path/to/your-project.side`
