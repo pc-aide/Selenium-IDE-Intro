@@ -69,8 +69,7 @@ s.onload=()=>html2canvas(document.body).then(c=>{
   var a=document.createElement('a');
   a.href=c.toDataURL();
   a.download='screenshot_'+Date.now()+'.png';
-  a.click();
-  alert('✅ OK!')
+  a.click()
 })
 ````
 
@@ -95,7 +94,7 @@ s.onload=()=>html2canvas(document.body).then(c=>{
       "id": "screenshot-auto-trigger",
       "comment": "Screenshot automatique via injection directe dans la page",
       "command": "executeScript",
-      "target": "var script = document.createElement('script'); script.innerHTML = 'var s=document.createElement(\\'script\\');s.src=\\'https://html2canvas.hertzen.com/dist/html2canvas.min.js\\';document.head.appendChild(s);s.onload=()=>html2canvas(document.body).then(c=>{var a=document.createElement(\\'a\\');a.href=c.toDataURL();a.download=\\'screenshot_\\'+Date.now()+\\'.png\\';a.click();console.log(\\'💾 Screenshot auto téléchargé!\\');alert(\\'✅ OK!\\')});'; document.body.appendChild(script);",
+      "target": "var script = document.createElement('script'); script.innerHTML = 'var s=document.createElement(\\'script\\');s.src=\\'https://html2canvas.hertzen.com/dist/html2canvas.min.js\\';document.head.appendChild(s);s.onload=()=>html2canvas(document.body).then(c=>{var a=document.createElement(\\'a\\');a.href=c.toDataURL();a.download=\\'screenshot_\\'+Date.now()+\\'.png\\';a.click();console.log(\\'💾 Screenshot auto téléchargé!\\')});'; document.body.appendChild(script);",
       "targets": [],
       "value": ""
     }, {
