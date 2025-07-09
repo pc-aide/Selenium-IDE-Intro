@@ -60,6 +60,20 @@ var s=document.createElement('script');s.src='https://html2canvas.hertzen.com/di
 var s=document.createElement('script');s.src='https://html2canvas.hertzen.com/dist/html2canvas.min.js';document.head.appendChild(s);s.onload=()=>html2canvas(document.body).then(c=>{var a=document.createElement('a');a.href=c.toDataURL();a.download='screenshot.png';a.click();alert('✅ OK!')})
 ````
 
+## modeDev\Source\Snppets\New : auto
+````js
+var s=document.createElement('script');
+s.src='https://html2canvas.hertzen.com/dist/html2canvas.min.js';
+document.head.appendChild(s);
+s.onload=()=>html2canvas(document.body).then(c=>{
+  var a=document.createElement('a');
+  a.href=c.toDataURL();
+  a.download='screenshot_'+Date.now()+'.png';
+  a.click();
+  alert('✅ OK!')
+})
+````
+
 ---
 
 ## test CLI
