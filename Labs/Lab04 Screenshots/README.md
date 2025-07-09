@@ -51,6 +51,13 @@ describe('Untitled', function() {
 
 ---
 
+## modDev - console
+````js
+var s=document.createElement('script');s.src='https://html2canvas.hertzen.com/dist/html2canvas.min.js';document.head.appendChild(s);s.onload=function(){html2canvas(document.body).then(function(canvas){var a=document.createElement('a');a.href=canvas.toDataURL('image/png');a.download='screenshot_saucedemo.png';a.click();alert('✅ Screenshot téléchargé!');})}
+````
+
+---
+
 ## test CLI
 ````powershell
 npx mocha test_login.spec.js
