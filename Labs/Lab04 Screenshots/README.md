@@ -2,6 +2,14 @@
 
 ---
 
+## Install
+### mocha
+````js
+npm install mocha selenium-webdriver
+````
+
+---
+
 ## workAround
 ````powershell
 npx mocha test_login.spec.js
