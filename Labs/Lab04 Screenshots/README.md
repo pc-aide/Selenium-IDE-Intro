@@ -74,6 +74,61 @@ s.onload=()=>html2canvas(document.body).then(c=>{
 })
 ````
 
+## login.side
+````js
+{
+  "id": "9f2f3372-8ce7-4b68-8507-36044ec4043b",
+  "version": "2.0",
+  "name": "test login",
+  "url": "https://www.saucedemo.com/",
+  "tests": [{
+    "id": "71ddaa4e-84f9-4aec-a282-0daf378d355c",
+    "name": "Untitled",
+    "commands": [{
+      "id": "29caab23-1237-4f3a-be99-377cf769d352",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.saucedemo.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "screenshot-auto-trigger",
+      "comment": "Screenshot automatique via injection directe dans la page",
+      "command": "executeScript",
+      "target": "var script = document.createElement('script'); script.innerHTML = 'var s=document.createElement(\\'script\\');s.src=\\'https://html2canvas.hertzen.com/dist/html2canvas.min.js\\';document.head.appendChild(s);s.onload=()=>html2canvas(document.body).then(c=>{var a=document.createElement(\\'a\\');a.href=c.toDataURL();a.download=\\'screenshot_\\'+Date.now()+\\'.png\\';a.click();console.log(\\'💾 Screenshot auto téléchargé!\\');alert(\\'✅ OK!\\')});'; document.body.appendChild(script);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "echo-screenshot-success",
+      "comment": "Confirmation que le screenshot a été pris",
+      "command": "echo",
+      "target": "✅ Screenshot téléchargé ! Vérifiez votre dossier Downloads.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41fb2c85-5b11-4839-9c8e-3a21fb416c8c",
+      "comment": "",
+      "command": "type",
+      "target": "id=user-name",
+      "targets": [],
+      "value": "standard_user"
+    }]
+  }],
+  "suites": [{
+    "id": "2304a57f-713a-4ade-a96a-7464211c5c8b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["71ddaa4e-84f9-4aec-a282-0daf378d355c"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": [{
+    "name": "./custom-screenshot-plugin.js"
+  }]
+}
+````
+
 ---
 
 ## test CLI
